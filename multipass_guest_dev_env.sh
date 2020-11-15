@@ -79,4 +79,4 @@ code-server --auth none --bind-addr 0.0.0.0:8443
 
 
 #EXECUTE WITH:
-#sudo curl -JLs --retry 5 https://gist.githubusercontent.com/LuisFX/9c25b5bfa7a15d6bdc3538da41ad8bdf/raw/a9a694e5410dace991687a5d97bee868e1e3cffc/multipass_net5_env.sh | sudo bash
+#sudo curl -JLs --retry 5 https://raw.githubusercontent.com/LuisFX/multipass/a2846ddc9ed9120a77d9b51ff537980f77250f6f/multipass_guest_dev_env.sh | sudo bash
