@@ -11,7 +11,7 @@ export CODE_SERVER_WORKSPACESTORAGE="$HOME_DIR/.code-server/User/workspaceStorag
 export IP=$(ifconfig en0 | grep inet | awk '$1=="inet" {print $2}') #Assumes en0. Verify your network interface
 echo $IP
 
-multipass launch ubuntu --name $VM_NAME
+multipass launch -c 2 -m 2G -d 10G -n $VM_NAME
 # multipass mount /Volumes/ssd/code $VM_NAME:/home/ubuntu/code
 
 multipass exec $VM_NAME -- sudo apt update
